@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+:root {
+
+  --bg-primary: #fbfbf6; /* Color de fondo de la página */
+  --txt-dark: #211f1f; /* Color del texto oscuro */
+  --txt-light: #fbfbf6; /* Color del texto claro */
+  --azul: #0000FD; /*Color principal*/
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+  color: var(--txt-dark);
+  background-color: var(--bg-primary);
+  font-family: "Inter";
+}
+
+/* ------------- Estilos del header ------------- */
+.Header {
+ 
+  padding: 1em 2em 1em 2em;
+  position: fixed;
+  top: 0;
+  background-color: #fbfbf6e1;
+  width: 100%;
+  z-index: 2;
+}
+
+.Header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.Header-logo {
+  width: 9em;
+}
+
+/* ------------- Estilos del menu ------------- */
+/* Descripción: Estilos para el menú del header
+*  Estructura:
+        - Menu
+        - Menu-item
+        - Menu-link
+*/
+
+.Menu {
+  list-style: none;
+  display: none;
+  /* display: flex; */
+}
+
+.Menu-item {
+  text-decoration: none;
+  padding: 0.2em;
+}
+
+.Menu-item:hover {
+  transform: scale(1.1);
+}
+
+.Menu-link {
+  margin-inline: 0.1em;
+  text-decoration: none;
+  padding: 0.6em;
+  width: max-content;
+  border-radius: 20px;
+  color: var(--txt-dark);
+}
+
+.Menu-link:hover {
+  color: var(--azul);
+}
+
+
+/* Boton de subir */
+
+.Main-subir{
+  background: none;
+  border: none;
+  position: fixed;
+  transform: rotate(-90deg);
+  right: 0em;
+  bottom: 5em;
+  color: var(--txt-dark);
+  border: solid 1px var(--txt-dark);
+  background-color: var(--bg-primary);
+  padding: 0.2em 1em 0.2em 1em;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.fa-arrow-right{
+  padding: .5em;
+}
+
+.Main-subir:hover{
+  color: var(--bg-primary);
+  background-color: var(--azul);
+}
+
+
+/* -------------- MEDIA QUERIES ------------------- */
+
+/* -------------- MQ para tablet ------------------- */
+
+@media only screen and (min-width: 768px) {
+  .Header {
+    padding: 1em 2em 1em 2em;
+  }
+
+  .Header-icon {
+    display: none;
+  }
+
+  .Menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+/* -------------- MQ para desktop ------------------ */
+@media only screen and (min-width: 1024px) {
+  .Header {
+    padding: 2em 5em 2em 5em;
+  }
+}
