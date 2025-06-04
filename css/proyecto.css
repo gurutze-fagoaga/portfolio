@@ -1,0 +1,90 @@
+.Content{
+  padding: 1em 8em 6em 8em;
+}
+
+.Project-tags {
+  padding: 0.8em 0 0.8em 0;
+}
+
+.Project-tags span {
+ border: solid 1px var(--azul);
+  border-radius: 20px;
+  padding: 0.3em 0.8em;
+  font-size: 0.85em;
+  color: var(--azul);  
+}
+.Buttons{
+  padding: 12em 1em 0 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+  color: var(--txt-dark);
+  padding: 0.7em 1.5em;
+  text-decoration: none;
+  margin: 1rem 0;
+}
+
+.Button:hover{
+  color: var(--azul);
+}
+
+.Link{
+  display: inline-block;
+  padding: 0.7em 1.5em;
+  background: #eee;
+  text-decoration: none;
+  margin: 1rem 0;
+  color: var(--txt-dark);
+}
+
+.project-images img {
+  max-width: 100%;
+  margin: 1rem 0;
+}
+
+.project-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.detail-block {
+  flex: 1 1 300px;
+}
+
+.project-description-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.project-description-columns div {
+  flex: 1;
+}
+
+.Error{
+  padding: 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.Error-mensaje{
+  color: var(--azul);
+  text-decoration:line-through;
+}
+
+@media (min-width: 768px) {
+  .project-description-columns {
+    flex-direction: row;
+  }
+}

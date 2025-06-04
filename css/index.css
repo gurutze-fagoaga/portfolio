@@ -1,5 +1,5 @@
 /* Galería principal */
-.gallery {
+.Gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -8,7 +8,7 @@
 }
 
 /* Proyecto individual */
-.project {
+.Project {
   border-radius: 10px;
   transition: transform 0.2s ease;
   position: relative;
@@ -16,24 +16,24 @@
 }
 
 /* Contenedor de imagen */
-.project .image-container {
+.Project-card {
   position: relative;
   z-index: 0;
 }
 
-.project:hover{
+.Project:hover{
      transform: scale(1.03);
 }
 
 /* Imagen */
-.project img {
+.Project-img {
   width: 100%;
   display: block;
   transition: transform 0.3s ease;
 }
 
 /* Overlay con nombre del proyecto */
-.overlay {
+.Project-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -52,26 +52,7 @@
   z-index: 1;
 }
 
-.project:hover .overlay {
+.Project:hover .Project-overlay {
   opacity: 1;
  
-}
-
-/* Etiquetas */
-.tags {
-  position: relative;
-  z-index: 1;
-  
-  padding: 0.8em;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
-}
-
-.tags span {
-  border: solid 1px var(--azul);
-  border-radius: 20px;
-  padding: 0.3em 0.8em;
-  font-size: 0.85em;
-  color: var(--azul);
 }

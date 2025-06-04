@@ -17,7 +17,7 @@ html {
 }
 
 
-body{
+.Body{
   color: var(--txt-dark);
   background-color: var(--bg-primary);
   font-family: "Inter";
@@ -29,7 +29,7 @@ body{
   padding: 1em 2em 1em 2em;
   position: fixed;
   top: 0;
-  background-color: #fbfbf6e1;
+  background-color: #fbfbf6;
   width: 100%;
   z-index: 2;
 }
@@ -80,6 +80,25 @@ body{
   color: var(--azul);
 }
 
+
+/* Etiquetas */
+.Project-tags {
+  position: relative;
+  z-index: 1;
+  
+  padding: 0.8em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.Project-tag {
+  border: solid 1px var(--azul);
+  border-radius: 20px;
+  padding: 0.3em 0.8em;
+  font-size: 0.85em;
+  color: var(--azul);
+}
 
 /* Boton de subir */
 

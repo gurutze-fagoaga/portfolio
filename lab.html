@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lab</title>
 
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    >
+    />
 
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/css.css">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/css.css" />
+    <link rel="stylesheet" href="./css/lab.css" />
 
     <script
       src="https://kit.fontawesome.com/92ec900005.js"
       crossorigin="anonymous"
     ></script>
 
-  <script src="./js/js.js"></script>
-</head>
-<body>
+    <script src="./js/js.js"></script>
+  </head>
+  <body class="Body">
     <header class="Header">
       <nav class="Header-nav">
         <a title="Logo Gurutze" href="./index.html"
@@ -28,30 +29,53 @@
             class="Header-logo"
             src="./img/logo-gurutze.png"
             alt="Logo Gurutze"
-        ></a>
+        /></a>
         <span class="Header-icon material-symbols-outlined"> menu </span>
         <span class="Header-icon u-displayNone material-symbols-outlined">
           close
         </span>
         <ul class="Menu">
           <li id="BtnHome" class="Menu-item">
-            <a title="Home" class="Menu-link" href="./index.html"
-              >Proyectos</a
-            >
+            <a title="Home" class="Menu-link" href="./index.html">Proyectos</a>
           </li>
           <li id="BtnLab" class="Menu-item">
-            <a title="Lab" class="Menu-link" href="./lab.html"
-              >Lab</a
-            >
+            <a title="Lab" class="Menu-link" href="./lab.html">Lab</a>
           </li>
           <li id="BtnContacto" class="Menu-item">
-            <a title="Contacto" class="Menu-link Menu-link--contacto" href="#Footer">Contacto</a>
+            <a
+              title="Contacto"
+              class="Menu-link Menu-link--contacto"
+              href="#Footer"
+              >Contacto</a
+            >
           </li>
         </ul>
       </nav>
     </header>
-  
 
-    <button id="Main-subir" class="u-displayNone Main-subir"> subir   <i class="fa-solid fa-arrow-right"></i></button>
-</body>
+    <!-- LAB -->
+
+    <section class="Lab">
+      <p class="Lab-info">Ilustración digital</p>
+      <p class="Lab-info">&</p>
+      <p class="Lab-info">proyectos personales</p>
+      <img class="Lab-logo" src="corazon.png" alt="Corazón artístico" />
+    </section>
+
+    <!-- Portfolio lab -->
+
+    <main class="Gallery">
+
+      <div class="Project"><img src="img1.jpg" alt="Proyecto 1" /></div>
+      <div class="Project"><img src="img2.jpg" alt="Proyecto 2" /></div>
+      <div class="Project"><img src="img3.jpg" alt="Proyecto 3" /></div>
+      
+      <!-- Agrega más proyectos -->
+
+    </main>
+
+    <button id="Main-subir" class="u-displayNone Main-subir">
+      subir <i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </body>
 </html>
