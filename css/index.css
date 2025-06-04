@@ -2,6 +2,7 @@
 .Gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: row;
   gap: 2rem;
   padding: 6rem;
   margin-top: 8em;
@@ -22,7 +23,7 @@
 }
 
 .Project:hover{
-     transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 /* Imagen */
@@ -39,7 +40,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--azul); /* fondo oscuro con transparencia */
+  background-color: #0000fdab; /* fondo oscuro con transparencia */
   display: flex;
   align-items: center;
   justify-content: center;

@@ -36,6 +36,7 @@
 }
 
 .Link{
+  cursor: pointer;
   display: inline-block;
   padding: 0.7em 1.5em;
   background: #eee;

@@ -18,27 +18,30 @@
 /* Galería */
 .Gallery {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
 }
+
 
 .Project {
-  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
-/* MQs */
 
-@media (min-width: 600px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.Link{
+  display: inline-block;
+  padding: 0.7em 1.5em;
+  text-decoration: none;
+  margin: 1rem 0;
+  color: var(--txt-dark);
+  cursor: pointer;
 }
 
-@media (min-width: 992px) {
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.Link:hover{
+  color: var(--azul);
 }
+

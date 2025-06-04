@@ -86,7 +86,7 @@ html {
   position: relative;
   z-index: 1;
   
-  padding: 0.8em;
+  padding: 0.8em 0.8em 0.8em 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
@@ -126,6 +126,10 @@ html {
   background-color: var(--azul);
 }
 
+/* Utilities */
+.u-displayNone{
+  display: none;
+}
 
 /* -------------- MEDIA QUERIES ------------------- */
 
