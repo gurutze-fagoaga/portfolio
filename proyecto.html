@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-     <link
+    <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./css/css.css" />
     <link rel="stylesheet" href="./css/proyecto.css" />
 
-    
     <script
       src="https://kit.fontawesome.com/92ec900005.js"
       crossorigin="anonymous"
@@ -20,10 +19,8 @@
     <script src="./js/js.js" defer></script>
     <script src="./js/data.js" defer></script>
     <script src="./js/proyecto.js" defer></script>
-
   </head>
   <body class="Body">
-    
     <!-- HEADER -->
 
     <header class="Header">
@@ -59,8 +56,12 @@
 
     <!-- BOTONES -->
     <nav class="Buttons">
-      <a class="Button" href="index.html"><i class="fa-solid fa-arrow-left"></i>portfolio</a>
-      <a class="Button" href="index.html">siguiente proyecto<i class="fa-solid fa-arrow-right"></i></a>
+      <a class="Button" href="index.html"
+        ><i class="fa-solid fa-arrow-left"></i>portfolio</a
+      >
+      <a id="siguienteProyecto" class="Button" href=""
+        >siguiente proyecto<i class="fa-solid fa-arrow-right"></i
+      ></a>
     </nav>
 
     <!-- CONTENIDO DEL PROYECTO-->
@@ -72,10 +73,11 @@
         <div id="project-description-left"></div>
         <div id="project-description-right"></div>
       </div>
-      <a id="project-link" href="#" target="_blank" class="Link"
-        >Ver proyecto</a>
 
-<div id="project-images-top" class="project-images"></div>
+      <div
+        id="project-images-top"
+        class="project-images project-images--top"
+      ></div>
 
       <div class="project-details">
         <div class="detail-block">
@@ -87,14 +89,15 @@
           <div id="project-style"></div>
         </div>
       </div>
+
+      <div
+        id="project-images-bottom"
+        class="project-images project-images--bottom"
+      ></div>
     </main>
-
-    <div id="project-images-bottom" class="project-images"></div>
-
 
     <button id="Main-subir" class="u-displayNone Main-subir">
       subir <i class="fa-solid fa-arrow-right"></i>
     </button>
-    
   </body>
 </html>

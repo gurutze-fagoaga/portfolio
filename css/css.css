@@ -25,10 +25,7 @@ html {
 
 /* ------------- Estilos del header ------------- */
 .Header {
- 
   padding: 1em 2em 1em 2em;
-  position: fixed;
-  top: 0;
   background-color: #fbfbf6;
   width: 100%;
   z-index: 2;

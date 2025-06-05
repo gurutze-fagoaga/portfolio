@@ -4,8 +4,8 @@
   grid-template-columns: repeat(3, 1fr);
   grid-auto-flow: row;
   gap: 2rem;
-  padding: 6rem;
-  margin-top: 8em;
+  padding: 0rem 6rem 6rem 6rem;
+  margin-top: 4em;
 }
 
 /* Proyecto individual */
