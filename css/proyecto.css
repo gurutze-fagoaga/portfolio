@@ -1,5 +1,5 @@
-.Content{
-  padding: 1em 8em 6em 8em;
+.Project{
+  padding: 1em 12em 6em 12em;
 }
 
 .Project-tags {
@@ -33,6 +33,7 @@
   padding: 0.7em 1.5em;
   text-decoration: none;
   margin: 1rem 0;
+  cursor: pointer;
 }
 
 .Button:hover{
@@ -49,70 +50,35 @@
   color: var(--txt-dark);
 }
 
-.project-images--top{
-  margin-bottom: 6em;
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
+.Project-description p{
+  margin-top: 2em;
 }
 
-.project-images--top img{
-  width: 60%;
-  padding: 1em;
-}
 
-.project-images--bottom{
-  margin-top: 8em;
+.Project-gallery{
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3em;
+  gap: 2em;
+  margin-top: 3em;
 }
 
-/* .project-images--bottom img{
+.Project-gallery img{
   width: 100%;
-} */
-
-.project-details {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
 }
 
-.detail-block {
-  flex: 1 1 300px;
+.Project-gallery video{
+
+  border: solid 1px var(--txt-dark);
+  width: 100%;
 }
 
-.project-description-columns {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
+/* Media Queries */
 
-.project-description-columns div {
-  flex: 1;
+@media only screen and (max-width: 600px) {
+.Project{
+  padding: 1em 4em 2em 4em;
 }
-
-.Error{
-  padding: 6em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-}
-.Error-mensaje{
-  color: var(--azul);
-  text-decoration:line-through;
-}
-
-@media (min-width: 768px) {
-  .project-description-columns {
-    flex-direction: row;
-  }
 }

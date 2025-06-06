@@ -1,89 +1,139 @@
 const projects = {
+
   plaza: {
     id: "plaza",
-  title: "Plaza",
-  tags: ["diseño web", "HTML", "CSS"],
-  descriptionLeft:"Plaza es un espacio creativo (ficticio) situado en Pamplona (Navarra), que imparte talleres creativos, y ofrece un espacio de coworking para creativo/as de diversas disciplinas artísticas. Además, organiza eventos mensuales con objetivo de ser un punto de encuentro entre creadores y clientes.",
-  descriptionRight: "En este proyecto he creado la identidad de marca de Plaza, y he llevado a cabo el diseño web con HTML, CSS y Javascript.",
-  namingTitle: "Contexto",
-  naming: `
-          La plaza ha sido históricamente el punto de encuentro, el espacio social, el centro del pueblo. 
-          
-          Plaza es un espacio creativo que invita a acercarse, relacionarse y abrisrse al pueblo y a su gente. Es un espacio abierto a crear y compartir. 
-  `,
-  styleTitle: "Decisiones de diseño",
-  style: `La identidad visual de la marca está diseñada para conectar con un público joven y creativo. Se ha optado por una gama cromática colorida y vibrante que transmite dinamismo, frescura y energía. Además, se han elegido tipografías modernas, versátiles y con un toque informal que refuerzan una personalidad cercana y desenfadada.`,
-  
-  imagesTop: ["plaza03.jpg","plaza01.jpg"],
-  imagesBottom: ["plaza02.jpg"]
+    title: "Plaza",
+    tags: ["Identidad", "Web", "Creatividad"],
+    year: "2024",
+    client: "Ficticio / Proyecto propio",
+    description: `
+    Plaza es un espacio creativo ficticio en Pamplona que organiza talleres y eventos mensuales para conectar artistas.
 
-},
+    Este proyecto incluye el desarrollo de una identidad visual completa y un diseño web con HTML, CSS y JavaScript.
+    `,
+    images: [
+      "plaza02.jpg", // imagen simple
+      { type: "video", src: "plaza-screen.webm"},
+      "plaza03.jpg"
+    ]
+  },
+
+  kultur: {
+      id: "kultur",
+      title: "Kultur",
+      tags: ["UX/UI", "Identidad visual"],
+      year: "2024",
+      client: "Proyecto personal",
+      description: `
+      Propuesta de diseño para Kultur, la programación estival de cultura de Navarra.
+
+      Diseño de la APP Kultur, para la gestión de entradas, información del evento, etc.
+
+      En el diseño se puede intuir un tono juvenil, festivalera y alegre, acorde con el público que se quiere atraer, y con la época del año ene l que se celebra dicha programación cultural.
+    ` ,
+    images: ["kultur.jpg"]
+  },
+
+   ods: {
+      id: "ods",
+      title: "Camisetas que enseñan",
+      tags: ["Diseño gráfico"],
+      year: "2022",
+      client: "Proyecto desarrollado en el grado de Creación y Diseño (EHU)",
+      description: `
+      Imágenes para concienciar sobre los Objetivos de Desarrollo Sostenible.
+
+      En este proyecto se ha llevado a cabo el diseño de varias imágenes que intentan enseñar y hacer reflexionar acerca de los   ODS (Objetivos de Desarrollo Sostenible). En este proyecto, se entiende el diseño gráfico como herramienta para llevar a cabo una función social, el cual podría denominarse como“diseño activista”.
+
+      Algunas de estas imágenes, han formado parte de la exposición colectiva “Camisetas que enseñan” que reúne 108 imágenes que enseñan y conciencian sobre las ODS. En la exposición, se ha utilizado como soporte de comunicación gráfica social la camiseta, una prenda que se ha convertido en una herramienta portátil de expresión en el espacio público.
+
+    ` ,
+    images: ["kultur.jpg"]
+  },
+
+   secreto: {
+      id: "secreto",
+      title: "Secreto",
+      tags: ["Identidad visual", "Packaging"],
+      year: "2021",
+      client: "Proyecto desarrollado en el grado de Creación y Diseño (EHU)",
+      description: `
+      Conceptualización y diseño del packaging de la marca de chocolates “Secreto”.
+
+      “El secreto está guardado bajo llave. Está encerrado tras una antigua cerradura dorada. Pero si miras por el ojo de la cerradura se puede descubrir. La antigua llave dorada se encuantra en manos de todo aquel que quiera abrir la puerta”.
+    ` ,
+    images: ["secreto00.jpg", "secreto01.jpg", "secreto02.jpg", "secreto03.jpg", "secreto04.jpg"]
+  },
+
 
   bilbao: {
     id: "bilbao",
-  title: "Identidad visual de Bilbao",
-  tags: ["identidad visual"],
-  descriptionLeft:"Este proyecto aborda la identidad visual de Bilbao partiendo de cinco conceptos: tradición, modernidad, arte, gastronomía e historia. Para realizar la conexión de dichos conceptos, partimos de cinco puentes más caracterísiticos de Bilbao, que se conectan con las ideas ya sea por su ubicación, historia o modernidad.",
-  descriptionRight:"",
-  namingTitle: "Contexto",
-  naming: `
-         Para aplicar el proyecto a la realidad, hemos creado un recorrido por el paseo de la Ría, pasando por los puentes mencionados, y también por los soportes físicos con forma de arco que aluden a los puentes.
-  `,
-  styleTitle: "Decisiones de diseño",
-  style: `
-    Para aplicar el proyecto a la realidad, hemos creado un recorrido por el paseo de la Ría, pasando por los puentes mencionados, y también por los soportes físicos con forma de arco que aluden a los puentes.`,
-  
-  imagesTop: ["bilbao01.jpg", "bilbao02.jpg"],
-  imagesBottom: ["bilbao03.jpg", "bilbao04.jpg", "bilbao05.jpg", "bilbao06.jpg"]
+    title: "Bilbao",
+    tags: ["Identidad visual"],
+    year: "2021",
+    client: "Proyecto grupal desarrollado en el grado de Creación y Diseño (EHU)",
+    description: `
+    Identidad visual de Bilbao, desde la tradición y la modernidad
 
-},
+    Este proyecto aborda la identidad visual de Bilbao partiendo de cinco conceptos: tradición, modernidad, arte, gastronomía e historia. Para realizar la conexión de dichos conceptos, partimos de cinco puentes más caracterísiticos de Bilbao, que se conectan con las ideas ya sea por su ubicación, historia o modernidad.
 
-  secreto: {
-    id: "secreto",
-  title: "Secreto",
-  tags: ["identidad visual", "packaging"],
-  descriptionLeft:"Creación, conceptualización y diseño del packaging de la marca de chocolates Secreto.",
-  descriptionRight:"“El secreto está guardado bajo llave. Está encerrado tras una antigua cerradura dorada. Pero si miras por el ojo de la cerradura se puede descubrir. La antigua llave dorada se encuantra en manos de todo aquel que quiera abrir la puerta.“",
-  namingTitle: "",
-  naming: "",
-  styleTitle: "",
-  style:"",
-  imagesTop: ["secreto00.jpg", "secreto03.jpg"],
-  imagesBottom: ["secreto01.jpg","secreto02.jpg","secreto04.jpg"]
+    Para aplicar el proyecto a la realidad, hemos creado un recorrido por el paseo de la Ría, pasando por los puentes mencionados, y también por los soportes físicos con forma de arco que aluden a los puentes.
 
-},
+    En cada soporte físico se comunica el carácter de cada puente con el recurso gráfico de una composición tipográfica a través de términos que ayudan a definir el proyecto. Para ello, hemos utilizado el color como forma simbólica que alude al carácter de cada concepto y de forma señalética para ubicar ene l mapa.
+
+    (Proyecto desarrollado junto a Bihotz Ibarzabal, Lua Buron y Nerea Bilbao.)
+    `,
+    images: ["plaza1.jpg", "plaza2.jpg", "plaza3.jpg"]
+  },
 
   vela: {
     id: "vela",
-  title: "Vela",
-  tags: ["identidad visual", "packaging"],
-  descriptionLeft:"Identidad visual y verbal y diseño de packaging de la marca de café Vela.",
-  descriptionRight:"Vela propone cuatro tipos de café, segun cuatro tipos de consumidores del producto: “Excusa”, “adicta”, “caprichosa” y “refinada”.  Mediante la identidad verbal (pequeñas narraciones sobre el tipo del consumidor) y la identidad visual (ilustraciones) se crea una marca única y con una historia que contar.",
-  namingTitle: "",
-  naming: "",
-  styleTitle: "",
-  style:"",
-  imagesTop: [ "vela04.jpg", "vela01.jpg"],
-  imagesBottom: ["vela02.jpg", "vela05.jpg", "vela06.jpg", "vela07.jpg", "vela08.jpg"]
+    title: "Vela",
+    tags: ["Identidad visual", "Packaging"],
+    year: "2022",
+    client: "Trabajo de fin de grado del grado Creación y Diseño (EHU)",
+    description: `
+    Identidad visual y verbal y diseño de packaging de la marca de café Vela.
 
-},
+    Vela propone cuatro tipos de café, segun cuatro tipos de consumidores del producto. Así, mediante una pequeña narración llama al amante del café a comprar el tipo de café que va con su tipología.
+    `,
+    images: ["vela01.jpg", "vela02.jpg", "vela03.jpg", "vela04.jpg", "vela05.jpg", "vela06.jpg", "vela07.jpg", "vela08.jpg"]
+  },  
 
-  carlton: {
+  premiumorganics: {
+    id: "premium-organics",
+    title: "Premium Organics",
+    tags: ["Diseño gráfico", "Ilustración"],
+    year: "2022",
+    client: "Trabajo realizado durante mis prácticas en Trupp (Bilbao)",
+    description: `
+    Diseño del calendario de mesa de Premium Organics, con ilustraciones propias.
+    `,
+    images: [""]
+  },  
+
+  shydei: {
+    id: "shydei",
+    title: "Shydei",
+    tags: ["Diseño de iconos"],
+    year: "2022",
+    client: "Trabajo realizado durante mis prácticas en Trupp (Bilbao)",
+    description: `
+    Diseño de una serie de iconos para Shydei, empresa especializada en gestión de limpieza y desinfección.
+    `,
+    images: [""]
+  },  
+
+    carlton: {
     id: "carlton",
-  title: "Catálogo del Hotel Carlton",
-  tags: ["identidad visual", "packaging"],
-  descriptionLeft:"Propuesta de rediseño del catálogo físico del Hotel Carlton de Bilbao.",
-  descriptionRight:"",
-  namingTitle: "",
-  naming: "",
-  styleTitle: "",
-  style:"",
-  imagesTop: [],
-  imagesBottom: ["carlton01.jpg", "carlton00.jpg", "carlton02.jpg", "carlton03.jpg", "carlton04.jpg", "carlton05.jpg"]
+    title: "Carlton",
+    tags: ["Diseño gráfico"],
+    year: "2022",
+    client: "Trabajo realizado durante mis prácticas en Trupp (Bilbao)",
+    description: `
+    Propuesta de rediseño del catálogo físico del Hotel Carlton de Bilbao.
+    `,
+    images: ["carlton00.jpg", "carlton01.jpg", "carlton02.jpg", "carlton03.jpg", "carlton04.jpg", "carlton05.jpg"]
+  },  
 
-}
-
-
-
-  // Puedes agregar más proyectos aquí
 };

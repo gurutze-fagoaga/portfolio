@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Proyecto</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -59,41 +59,26 @@
       <a class="Button" href="index.html"
         ><i class="fa-solid fa-arrow-left"></i>portfolio</a
       >
-      <a id="siguienteProyecto" class="Button" href=""
-        >siguiente proyecto<i class="fa-solid fa-arrow-right"></i
-      ></a>
+      <a id="siguienteProyecto" class="Button"></button>
+        siguiente proyecto<i class="fa-solid fa-arrow-right"></i>
+      </a>
     </nav>
 
     <!-- CONTENIDO DEL PROYECTO-->
 
-    <main class="Content">
-      <h1 id="project-title"></h1>
+    <main class="Project">
+      <h1 class="Project-title" id="project-title"></h1>
+
       <div id="project-tags" class="Project-tags"></div>
-      <div class="project-description-columns">
-        <div id="project-description-left"></div>
-        <div id="project-description-right"></div>
+
+      <div class="Project-info" class="info-line">
+        <span id="project-year"></span> • <span id="project-client"></span>
       </div>
 
-      <div
-        id="project-images-top"
-        class="project-images project-images--top"
-      ></div>
+      <div id="project-description" class="Project-description"></div>
 
-      <div class="project-details">
-        <div class="detail-block">
-          <h3 id="title-naming"></h3>
-          <div id="project-naming"></div>
-        </div>
-        <div class="detail-block">
-          <h3 id="title-style"></h3>
-          <div id="project-style"></div>
-        </div>
-      </div>
-
-      <div
-        id="project-images-bottom"
-        class="project-images project-images--bottom"
-      ></div>
+      <div id="project-images" class="Project-gallery"></div>
+      
     </main>
 
     <button id="Main-subir" class="u-displayNone Main-subir">
