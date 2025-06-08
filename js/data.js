@@ -3,18 +3,19 @@ const projects = {
   plaza: {
     id: "plaza",
     title: "Plaza",
-    tags: ["Identidad", "Web", "Creatividad"],
-    year: "2024",
-    client: "Ficticio / Proyecto propio",
+    tags: ["Diseño web", "HTML", "CSS"],
+    year: "2025",
+    client: "Proyecto final del módulo de diseño web en CEI",
     description: `
-    Plaza es un espacio creativo ficticio en Pamplona que organiza talleres y eventos mensuales para conectar artistas.
+    En este proyecto se ha diseñado la página web de Plaza. Plaza es un espacio creativo que imparte talleres, tiene un espacio de coworking y organiza eventos mensuales para conectar artistas.
 
-    Este proyecto incluye el desarrollo de una identidad visual completa y un diseño web con HTML, CSS y JavaScript.
+    Plaza es una marca de carácter ficticio, que ha sido creada para desarrollar este proyecto. Por tanto, se ha creado la identidad visual de la misma. Los colores, el uso de la tipografía y otros elementos gráficos transmiten la identidad joven, creativa e innovadora de la marca.
+
+    La página web ha sido desarrollada con HTML, CSS y Javascript, y no se han utilizado librerías externas.
     `,
     images: [
-      "plaza02.jpg", // imagen simple
-      { type: "video", src: "plaza-screen.webm"},
-      "plaza03.jpg"
+      "plaza03-1920.jpg", // imagen simple
+      { type: "video", src: "plaza-screen.webm"}
     ]
   },
 
@@ -35,7 +36,7 @@ const projects = {
   },
 
    ods: {
-      id: "ods",
+      id: "camisetas",
       title: "Camisetas que enseñan",
       tags: ["Diseño gráfico"],
       year: "2022",
@@ -48,7 +49,7 @@ const projects = {
       Algunas de estas imágenes, han formado parte de la exposición colectiva “Camisetas que enseñan” que reúne 108 imágenes que enseñan y conciencian sobre las ODS. En la exposición, se ha utilizado como soporte de comunicación gráfica social la camiseta, una prenda que se ha convertido en una herramienta portátil de expresión en el espacio público.
 
     ` ,
-    images: ["kultur.jpg"]
+    images: ["ods01.jpg", "ods02.jpg", "camisetas02.jpg", "camisetas01.jpg", "camisetas03.jpg"], 
   },
 
    secreto: {
