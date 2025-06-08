@@ -30,9 +30,9 @@ const projects = {
 
       Diseño de la APP Kultur, para la gestión de entradas, información del evento, etc.
 
-      En el diseño se puede intuir un tono juvenil, festivalera y alegre, acorde con el público que se quiere atraer, y con la época del año ene l que se celebra dicha programación cultural.
+      En el diseño se puede intuir un tono juvenil, festivalera y alegre, acorde con el público que se quiere atraer, y con la época del año en el que se celebra dicha programación cultural.
     ` ,
-    images: ["kultur.jpg"]
+    images: ["kultur01.jpg", "kultur02.jpg"]
   },
 
    ods: {
@@ -84,7 +84,7 @@ const projects = {
 
     (Proyecto desarrollado junto a Bihotz Ibarzabal, Lua Buron y Nerea Bilbao.)
     `,
-    images: ["plaza1.jpg", "plaza2.jpg", "plaza3.jpg"]
+    images: ["bilbao01.jpg", "bilbao00.jpg", "bilbao02.jpg", "bilbao03.jpg", "bilbao04.jpg", "bilbao05.jpg", "bilbao06.jpg", "bilbao07.jpg"]
   },
 
   vela: {
@@ -102,7 +102,7 @@ const projects = {
   },  
 
   premiumorganics: {
-    id: "premium-organics",
+    id: "premium",
     title: "Premium Organics",
     tags: ["Diseño gráfico", "Ilustración"],
     year: "2022",
@@ -110,7 +110,10 @@ const projects = {
     description: `
     Diseño del calendario de mesa de Premium Organics, con ilustraciones propias.
     `,
-    images: [""]
+    images: [
+      { type: "video", src: "premium-ilustraciones.mp4"},
+      "premium01.jpg", "premium02.jpg", "premium03.jpg", "premium04.jpg", "premium05.jpg" 
+    ]
   },  
 
   shydei: {
@@ -122,7 +125,7 @@ const projects = {
     description: `
     Diseño de una serie de iconos para Shydei, empresa especializada en gestión de limpieza y desinfección.
     `,
-    images: [""]
+    images: ["shydei02.jpg","shydei01.jpg"]
   },  
 
     carlton: {

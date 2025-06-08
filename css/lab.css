@@ -2,46 +2,70 @@
 .Lab {
   text-align: center;
   padding: 2rem 1rem;
-  margin-top: 10em;
+  margin-top: 4em;
 }
-
 
 .Lab-info {
   margin: 0.2rem 0;
 }
 
 .Lab-logo {
-  margin-top: 1rem;
-  max-width: 80px;
+  width: 10%;
+  margin-bottom: 4em;
 }
 
-/* Galería */
+/* Galería estilo Masonry */
 .Gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
+  column-count: 2;           /* Dos columnas en desktop */
+  column-gap: 4em;          /* Espacio entre columnas */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em 8em 6em 8em;
 }
 
-
+/* Cada proyecto se trata como un bloque inline */
 .Project {
+  display: inline-block;
+  width: 100%;               /* Ocupa todo el ancho de la columna */
+  margin-bottom: 4em;       /* Espacio entre proyectos */
+}
+
+.Project img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  object-fit: cover;
+  display: block;
 }
 
-
-.Link{
+/* Estilo para el enlace de Instagram */
+.Link {
   display: inline-block;
-  padding: 0.7em 1.5em;
   text-decoration: none;
   margin: 1rem 0;
   color: var(--txt-dark);
   cursor: pointer;
 }
 
-.Link:hover{
+.Link:hover {
   color: var(--azul);
 }
+
+/* Responsive: una sola columna en móvil */
+@media (max-width: 768px) {
+  .Gallery {
+    column-count: 1;
+    padding: 2em;
+  }
+
+  .Lab-logo {
+  width: 30%;
+  margin-bottom: 2em;
+}
+
+  .Lab {
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+}
+
 
