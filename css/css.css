@@ -19,7 +19,7 @@ html {
 
 .Body{
   color: var(--txt-dark);
-  background-color: var(--bg-primary);
+  background-color: #ffffff;
   font-family: "Inter";
 }
 
@@ -95,6 +95,43 @@ html {
   padding: 0.3em 0.8em;
   font-size: 0.85em;
   color: var(--azul);
+}
+
+/* Footer */
+
+.Footer{
+  width: 100%;
+  background-color: var(--txt-dark);
+  color: white;
+  padding: 2em 6em 1em 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+}
+.Footer-rrss{
+  height: 100%;
+  display: flex;
+  gap: 1em;
+}
+
+.fa-brands{
+  object-fit: cover;
+  text-decoration: none;
+  color: white;
+}
+
+.fa-brands:hover{
+  transform: scale(1.1);
+}
+
+.Footer-copyright{
+  margin-top: 2em;
+  font-size: small;
+  color: #c0c0c0;
+
 }
 
 /* Boton de subir */
