@@ -14,6 +14,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
 }
 
 
@@ -74,6 +76,46 @@ html {
 }
 
 .Menu-link:hover {
+  color: var(--azul);
+}
+
+.Header-icon {
+  display: flex;
+  z-index: 2;
+  cursor: pointer;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+}
+
+
+.Header-icon.desplegado {
+  color: var(--bg-primary);
+}
+
+
+.Menu.desplegado {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 5em 2em 2em 2em;
+  justify-content: start;
+  align-items: end;
+  gap: 1.5em;
+  background-color: #0000fdb4; 
+  width: fit-content;
+  border-bottom-left-radius: 40px;
+  z-index: 1;
+}
+
+.Menu.desplegado .Menu-link{
+  color: var(--bg-primary);
+}
+
+.Menu.desplegado .Menu-link:hover{
   color: var(--azul);
 }
 

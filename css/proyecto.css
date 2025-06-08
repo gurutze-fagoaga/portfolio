@@ -1,3 +1,7 @@
+.Menu-link--proyectos{
+  color: var(--azul);
+}
+
 .Project{
   padding: 1em 12em 6em 12em;
 }
@@ -71,6 +75,35 @@
 
 .Project-gallery video{
   width: 100%;
+}
+
+/* Animación de entrada */
+.Project {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.Project.loaded {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.is-loading .Project {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Footer animación al cargar */
+.is-loading .Footer {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.Footer.loaded {
+  opacity: 1;
+  transition: opacity 0.4s ease;
 }
 
 /* Media Queries */
