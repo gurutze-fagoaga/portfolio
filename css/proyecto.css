@@ -21,7 +21,7 @@
   padding: 0em 1em 0 1em;
   position: sticky;
   top: 0;
-  background-color: var(--bg-primary);
+  background-color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

@@ -28,7 +28,7 @@ html {
 /* ------------- Estilos del header ------------- */
 .Header {
   padding: 1em 2em 1em 2em;
-  background-color: #fbfbf6;
+  background-color: #ffffff;
   width: 100%;
   z-index: 2;
 }
@@ -91,6 +91,7 @@ html {
 
 .Header-icon.desplegado {
   color: var(--bg-primary);
+  z-index: 4;
 }
 
 
@@ -108,7 +109,7 @@ html {
   background-color: #0000fdb4; 
   width: fit-content;
   border-bottom-left-radius: 40px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .Menu.desplegado .Menu-link{
