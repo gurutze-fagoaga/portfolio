@@ -19,21 +19,29 @@ const projects = {
     ]
   },
 
-  kultur: {
-      id: "kultur",
-      title: "Kultur",
-      tags: ["UX/UI", "Identidad visual"],
-      year: "2024",
-      client: "Proyecto personal",
+
+    tribu: {
+      id: "tribu",
+      title: "Tribu",
+      tags: ["UX/UI"],
+      year: "2025",
+      client: "Proyecto desarrollado en el módulo de diseño UX/UI del CEI",
       description: `
-      Propuesta de diseño para Kultur, la programación estival de cultura de Navarra.
+      El objetivo del proyecto es encontrar una solución al siguiente problema mediante el diseño de una app, utilizando la metodología Design Sprint: ¿Cómo contribuir con la tecnología a mejorar las relaciones de amistad de toda la vida cuando cumplimos los 25-35 años?
 
-      Diseño de la APP Kultur, para la gestión de entradas, información del evento, etc.
+      Tribu es una app que tiene como objetivo mantener conectados los grupos de amigos que tienen dificultades para quedar frecuentemente. 
+      
+      La funcionalidad principal es conectar a través de juegos. Cada amigo juega individualmente pero se obtiene una puntuación grupal, por lo que es importante que todos participen. Además, hay premios cada semana para el grupo que se coloque primero en el ranking.
 
-      En el diseño se puede intuir un tono juvenil, festivalera y alegre, acorde con el público que se quiere atraer, y con la época del año en el que se celebra dicha programación cultural.
+      Tribu también tiene como objetivo incentivar las quedadas o planes en persona, e incluye un apartado donde se hace recuento de dichos planes para ver el estado de salud del grupo en diferentes ámbitos.
+      
+      También muestra el estado de ánimo de cada amigo mediante un emoji que elegirán cada día al entrar en la app. Así podrán ver con qué ánimos se encuentran sus amigos y hablar con ellos desde el chat de Tribu.
     ` ,
-    images: ["kultur01.jpg", "kultur02.jpg"]
+    images: [{ type: "video", src: "tribu-screen2.mp4"},  "tribu-wireframes.png", "tribu-ui-kit.png",  "tribu-onboarding.png", "tribu-prototipo.png"
+      
+    ]
   },
+
 
    ods: {
       id: "camisetas",
@@ -50,6 +58,22 @@ const projects = {
 
     ` ,
     images: ["ods01.jpg", "ods02.jpg", "camisetas02.jpg", "camisetas01.jpg", "camisetas03.jpg"], 
+  },
+
+    kultur: {
+      id: "kultur",
+      title: "Kultur",
+      tags: ["UX/UI", "Identidad visual"],
+      year: "2024",
+      client: "Proyecto personal",
+      description: `
+      Propuesta de diseño para Kultur, la programación estival de cultura de Navarra.
+
+      Diseño de la APP Kultur, para la gestión de entradas, información del evento, etc.
+
+      En el diseño se puede intuir un tono juvenil, festivalera y alegre, acorde con el público que se quiere atraer, y con la época del año en el que se celebra dicha programación cultural.
+    ` ,
+    images: ["kultur01.jpg", "kultur02.jpg"]
   },
 
    secreto: {

@@ -20,9 +20,14 @@ html {
 
 
 .Body{
+  opacity: 0;
   color: var(--txt-dark);
   background-color: #ffffff;
   font-family: "Inter";
+}
+
+.Body.loaded {
+  opacity: 1;
 }
 
 /* ------------- Estilos del header ------------- */

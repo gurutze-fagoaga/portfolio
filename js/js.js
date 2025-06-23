@@ -62,7 +62,9 @@ listaIconosMenu.forEach(icono => {
 });
 
 
-
+window.onload = () => {
+  document.body.classList.add("loaded");
+};
 
 
 
