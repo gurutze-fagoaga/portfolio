@@ -39,11 +39,11 @@ function renderImages(imageList, containerId, altText) {
       if (item.poster) {
         video.poster = `img/${item.poster}`;
       }
-      video.autoplay = true;
+      // video.autoplay = true;
       video.muted = true;
       video.playsInline = true;
       video.loop = true;
-      video.controls = false;
+      video.controls = true;
       container.appendChild(video);
     }
   });
