@@ -2,14 +2,21 @@
   color: var(--azul);
 }
 
+.Menu.desplegado .Menu-link--proyectos{
+  color: var(--azul);
+  
+}
+
 /* Galería principal */
 .Gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-flow: row;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0em 3em 3em 3em;
   gap: 2rem;
-  padding: 0rem 6rem 6rem 6rem;
   margin-top: 4em;
+
 }
 
 /* Proyecto individual */
@@ -64,27 +71,29 @@
 
 
 
-/* Media Queries */
+/* Media Queries para tablets*/
 
-
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
 .Gallery {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-auto-flow: row;
   gap: 2rem;
-  padding: 0rem 6rem 6rem 6rem;
+  padding: 0rem 5rem 5rem 5rem;
   margin-top: 4em;
 }
 }
 
-@media only screen and (max-width: 600px) {
-.Gallery {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0em 5em 5em 5em;
+/* -------------- MQ para desktop ------------------ */
 
-}
+@media only screen and (min-width: 1024px) {
+
+  .Gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: row;
+  gap: 2rem;
+  padding: 0rem 6rem 6rem 6rem;
+  margin-top: 4em;
+  }
 }

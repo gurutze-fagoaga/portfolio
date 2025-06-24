@@ -154,7 +154,7 @@ const projects = {
 
     carlton: {
     id: "carlton",
-    title: "Carlton",
+    title: "Hotel Carlton",
     tags: ["Diseño gráfico"],
     year: "2022",
     client: "Trabajo realizado durante mis prácticas en Trupp (Bilbao)",

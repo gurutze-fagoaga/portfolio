@@ -32,7 +32,7 @@ html {
 
 /* ------------- Estilos del header ------------- */
 .Header {
-  padding: 1em 2em 1em 2em;
+  padding: 3em 2em 1em 2em;
   background-color: #ffffff;
   width: 100%;
   z-index: 2;
@@ -89,13 +89,20 @@ html {
   z-index: 2;
   cursor: pointer;
   position: fixed;
-  top: 1em;
+  top: 2em;
   right: 1em;
+  background-color: var(--bg-primary);
+  padding: .3em;
+  border-radius: 50%;
+  border: solid var(--txt-dark) 1px;
+ 
 }
 
 
 .Header-icon.desplegado {
   color: var(--bg-primary);
+  background: none;
+  border-color: var(--bg-primary);
   z-index: 4;
 }
 
@@ -107,7 +114,7 @@ html {
   position: fixed;
   top: 0;
   right: 0;
-  padding: 5em 2em 2em 2em;
+  padding: 7em 2em 2em 2em;
   justify-content: start;
   align-items: end;
   gap: 1.5em;
@@ -128,13 +135,7 @@ html {
 
 /* Etiquetas */
 .Project-tags {
-  position: relative;
-  z-index: 1;
-  
-  padding: 0.8em 0.8em 0.8em 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
+  display: none;
 }
 
 .Project-tag {
@@ -219,7 +220,7 @@ html {
 
 @media only screen and (min-width: 768px) {
   .Header {
-    padding: 1em 2em 1em 2em;
+    padding: 3em 2em 1em 2em;
   }
 
   .Header-icon {
@@ -236,6 +237,15 @@ html {
 /* -------------- MQ para desktop ------------------ */
 @media only screen and (min-width: 1024px) {
   .Header {
-    padding: 2em 5em 2em 5em;
+    padding: 3em 5em 2em 5em;
+  }
+
+    .Project-tags {
+  position: relative;
+  z-index: 1;
+  padding: 0.8em 0.8em 0.8em 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
   }
 }

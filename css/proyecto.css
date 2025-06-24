@@ -2,8 +2,24 @@
   color: var(--azul);
 }
 
-.Project{
-  padding: 1em 12em 6em 12em;
+
+/* Animación de entrada */
+.Project {
+    padding: 1em 4em 2em 4em;
+
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.Project.loaded {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.is-loading .Project {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .Project-tags {
@@ -77,22 +93,7 @@
   width: 100%;
 }
 
-/* Animación de entrada */
-.Project {
-  opacity: 0;
-  transform: translateX(100px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
 
-.Project.loaded {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.is-loading .Project {
-  opacity: 0;
-  pointer-events: none;
-}
 
 /* Footer animación al cargar */
 .is-loading .Footer {
@@ -106,10 +107,25 @@
   transition: opacity 0.4s ease;
 }
 
-/* Media Queries */
 
-@media only screen and (max-width: 600px) {
-.Project{
-  padding: 1em 4em 2em 4em;
+/* -------------- MEDIA QUERIES ------------------- */
+
+/* -------------- MQ para tablet ------------------- */
+
+@media only screen and (min-width: 768px) {
+
+  .Project{
+    padding: 1em 7em 6em 7em;
+  }
+
 }
+
+/* -------------- MQ para desktop ------------------ */
+@media only screen and (min-width: 1024px) {
+
+    .Project{
+    padding: 1em 12em 6em 12em;
+  }
+
+  
 }
