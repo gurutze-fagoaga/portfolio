@@ -3,6 +3,15 @@
 }
 
 
+.Header-icon{
+  position: absolute;
+}
+
+.Header-icon.desplegado{
+  position: fixed;
+  top: 2em;
+  right: 1em;}
+
 /* Animación de entrada */
 .Project {
     padding: 1em 4em 2em 4em;

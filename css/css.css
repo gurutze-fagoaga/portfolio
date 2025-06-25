@@ -85,8 +85,9 @@ html {
 }
 
 .Header-icon {
+  z-index: 3;
   display: flex;
-  z-index: 2;
+  z-index: 4;
   cursor: pointer;
   position: fixed;
   top: 2em;
@@ -103,7 +104,6 @@ html {
   color: var(--bg-primary);
   background: none;
   border-color: var(--bg-primary);
-  z-index: 4;
 }
 
 
