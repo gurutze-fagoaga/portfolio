@@ -2,11 +2,9 @@
 * js.js
 *    Estructura:
 *       -Constantes
-*       -Varibles
+*       -Variables
 *       -Funciones
 *---------------------------------------------------------------------------------*/
-
-
 
 
 // ------------------------- CONSTANTES Y VARIABLES ------------------------------- //
@@ -21,50 +19,71 @@ const menu = document.querySelector(".Menu");
 const listaBotonesMenu = document.querySelectorAll(".Menu-item");
 
 
-// Función para mostrar el botón de subir arriba
-// añado event listener de "wheel" (rueda de scroll del ratón) al documento
-function mostrarBotonSubir() {
-    
-}
-document.addEventListener('scroll', (e) => {
-    // si el scroll no está al inicio (!=0) 
-    if (window.scrollY != 0){
-        // se muestra el botón
-        btnSubir.classList.remove("u-displayNone") 
-    // si está al inicio
-    } else {
-        // añade el botón
-        btnSubir.classList.add("u-displayNone") 
-    }
-    
-});
-// Función para hacer scroll arriba con el botón de subir
-btnSubir.addEventListener("click", () => {
-    window.scrollTo(0,0)
-    btnSubir.classList.add("u-displayNone")  
-})
+// ------------------------- FUNCIONES ------------------------------- //
 
+// Mostrar botón de subir al hacer scroll
+document.addEventListener('scroll', (e) => {
+  if (window.scrollY != 0){
+    btnSubir.classList.remove("u-displayNone");
+  } else {
+    btnSubir.classList.add("u-displayNone");
+  }
+});
+
+// Scroll arriba al hacer click en el botón
+btnSubir.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+  btnSubir.classList.add("u-displayNone");
+});
 
 // Función para desplegar y plegar el menu hamburguesa
-// recorre los iconos
 listaIconosMenu.forEach(icono => {
-    // añade el eventListener de click
-    icono.addEventListener("click", () => {
-        // añade/quita la clase desplegado
-        menu.classList.toggle("desplegado");
+  icono.addEventListener("click", () => {
+    menu.classList.toggle("desplegado");
 
-        // cambia la visibilidad de los iconos de abrir/cerrar
-        listaIconosMenu.forEach(icono => {
-            icono.classList.toggle("u-displayNone"); 
-            icono.classList.toggle("desplegado");
-        })
-    })
+    // Cambia visibilidad de los iconos de abrir/cerrar
+    listaIconosMenu.forEach(icono => {
+      icono.classList.toggle("u-displayNone");
+      icono.classList.toggle("desplegado");
+    });
+  });
 });
 
-
+// Animación al cargar página
 window.onload = () => {
   document.body.classList.add("loaded");
 };
+
+
+// ------------------------- FILTRO DE PROYECTOS ------------------------------- //
+
+document.addEventListener('DOMContentLoaded', function () {
+  const filterButtons = document.querySelectorAll('.Filter-button');
+  const projects = document.querySelectorAll('.Project');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter.toLowerCase();
+
+      projects.forEach(project => {
+        const tags = project.querySelectorAll('.Project-tag');
+        const tagTexts = Array.from(tags).map(tag => tag.textContent.toLowerCase());
+
+        if (filter === 'all') {
+          project.style.display = '';
+        } else {
+          const matchesFilter = tagTexts.some(tag => tag.includes(filter));
+          project.style.display = matchesFilter ? '' : 'none';
+        }
+      });
+
+      // Opcional: marcar botón activo
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+    });
+  });
+});
+
 
 
 

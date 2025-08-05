@@ -18,6 +18,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/js.js" defer></script>
+
+    <link rel="icon" href="./img/flavicon.png" />
   </head>
 
   <body class="Body">
@@ -63,10 +65,23 @@
         close
       </span>
     </header>
-
     <!-- PORTFOLIO-->
 
+    <section class="Filter">
+      <button class="Filter-button active" data-filter="all">Todos</button>
+      <button class="Filter-button" data-filter="gráfico">
+        Diseño gráfico
+      </button>
+      <button class="Filter-button" data-filter="web">Diseño web</button>
+
+      <button class="Filter-button" data-filter="ux/ui">UX/UI</button>
+    </section>
+
     <main class="Gallery">
+
+ 
+
+      <!--plaza-->
       <div class="Project">
         <div class="Project-card">
           <a href="proyecto.html?id=plaza">
@@ -82,8 +97,59 @@
           <span class="Project-tag">CSS</span>
         </div>
       </div>
+        <!--picknic-->
+      <div class="Project">
+        <div class="Project-card">
+          <a href="proyecto.html?id=picknic">
+            <img
+              class="Project-img"
+              src="./img/picknic-menu.jpg"
+              alt="Picknic"
+            />
+            <div class="Project-overlay">
+              <p>Picknic</p>
+            </div>
+          </a>
+        </div>
+        <div class="Project-tags">
+          <span class="Project-tag">UX/UI</span>
+        </div>
+      </div>
+      <!--Unlok-->
+      <div class="Project">
+        <div class="Project-card">
+          <a href="proyecto.html?id=unlok">
+            <img class="Project-img" src="./img/unlok-menu.jpg" alt="Unlok" />
+            <div class="Project-overlay">
+              <p>Unlok</p>
+            </div>
+          </a>
+        </div>
+        <div class="Project-tags">
+          <span class="Project-tag">UX/UI</span>
+        </div>
+      </div>
 
-      
+      <!--ods-->
+      <div class="Project">
+        <div class="Project-card">
+          <a href="proyecto.html?id=camisetas">
+            <img
+              class="Project-img"
+              src="./img/camisetas-que-ensenan-menu.jpg"
+              alt="Camisetas que enseñan"
+            />
+            <div class="Project-overlay">
+              <p>Camisetas que enseñan</p>
+            </div>
+          </a>
+        </div>
+        <div class="Project-tags">
+          <span class="Project-tag">Diseño gráfico</span>
+        </div>
+      </div>
+
+      <!--Tribu-->
       <div class="Project">
         <div class="Project-card">
           <a href="proyecto.html?id=tribu">
@@ -97,40 +163,42 @@
           <span class="Project-tag">UX/UI</span>
         </div>
       </div>
-      
+
+      <!--bilbao-->
       <div class="Project">
         <div class="Project-card">
-          <a href="proyecto.html?id=camisetas">
+          <a href="proyecto.html?id=bilbao">
+            <img class="Project-img" src="./img/bilbao-menu.jpg" alt="Bilbao" />
+            <div class="Project-overlay">
+              <p>Identidad visual de Bilbao</p>
+            </div>
+          </a>
+        </div>
+        <div class="Project-tags">
+          <span class="Project-tag">Identidad visual</span>
+        </div>
+      </div>
+
+      <!--premium-->
+      <div class="Project">
+        <div class="Project-card">
+          <a href="proyecto.html?id=premium">
             <img
-            class="Project-img"
-            src="./img/camisetas-que-ensenan-menu.jpg"
-            alt="Camisetas que enseñan"
+              class="Project-img"
+              src="./img/premium-organics-menu.jpg"
+              alt="Premium Organics"
             />
             <div class="Project-overlay">
-              <p>Camisetas que enseñan</p>
+              <p>Premium Organics</p>
             </div>
           </a>
         </div>
         <div class="Project-tags">
           <span class="Project-tag">Diseño gráfico</span>
+          <span class="Project-tag">Ilustración</span>
         </div>
       </div>
-      
-      <div class="Project">
-        <div class="Project-card">
-          <a href="proyecto.html?id=kultur">
-            <img class="Project-img" src="./img/kultur-menu.jpg" alt="Kultur" />
-            <div class="Project-overlay">
-              <p>Kultur</p>
-            </div>
-          </a>
-        </div>
-        <div class="Project-tags">
-          <span class="Project-tag">UX/UI</span>
-          <span class="Project-tag">Identidad visual</span>
-        </div>
-      </div>
-      
+      <!--secreto-->
       <div class="Project">
         <div class="Project-card">
           <a href="proyecto.html?id=secreto">
@@ -150,20 +218,39 @@
         </div>
       </div>
 
+      <!--Kultur-->
       <div class="Project">
         <div class="Project-card">
-          <a href="proyecto.html?id=bilbao">
-            <img class="Project-img" src="./img/bilbao-menu.jpg" alt="Bilbao" />
+          <a href="proyecto.html?id=kultur">
+            <img class="Project-img" src="./img/kultur-menu.jpg" alt="Kultur" />
             <div class="Project-overlay">
-              <p>Identidad visual de Bilbao</p>
+              <p>Kultur</p>
             </div>
           </a>
         </div>
         <div class="Project-tags">
+          <span class="Project-tag">UX/UI</span>
           <span class="Project-tag">Identidad visual</span>
         </div>
       </div>
 
+      <!--shydei-->
+      <div class="Project">
+        <div class="Project-card">
+          <a href="proyecto.html?id=shydei">
+            <img class="Project-img" src="./img/shydei-menu.jpg" alt="Shydei" />
+            <div class="Project-overlay">
+              <p>Shydei</p>
+            </div>
+          </a>
+        </div>
+        <div class="Project-tags">
+          <span class="Project-tag">Diseño de iconos</span>
+          <span class="Project-tag">Diseño gráfico</span>
+        </div>
+      </div>
+
+      <!--vela-->
       <div class="Project">
         <div class="Project-card">
           <a href="proyecto.html?id=vela">
@@ -180,39 +267,7 @@
         </div>
       </div>
 
-      <div class="Project">
-        <div class="Project-card">
-          <a href="proyecto.html?id=premium">
-            <img
-              class="Project-img"
-              src="./img/premium-organics-menu.jpg"
-              alt="Premium Organics"
-            />
-            <div class="Project-overlay">
-              <p>Premium Organics</p>
-            </div>
-          </a>
-        </div>
-        <div class="Project-tags">
-          <span class="Project-tag">Diseño gráfico</span>
-          <span class="Project-tag">Ilustración</span>
-        </div>
-      </div>
-
-      <div class="Project">
-        <div class="Project-card">
-          <a href="proyecto.html?id=shydei">
-            <img class="Project-img" src="./img/shydei-menu.jpg" alt="Shydei" />
-            <div class="Project-overlay">
-              <p>Shydei</p>
-            </div>
-          </a>
-        </div>
-        <div class="Project-tags">
-          <span class="Project-tag">Diseño de iconos</span>
-        </div>
-      </div>
-
+      <!--carlton-->
       <div class="Project">
         <div class="Project-card">
           <a href="proyecto.html?id=carlton">

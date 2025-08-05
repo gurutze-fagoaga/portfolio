@@ -7,6 +7,45 @@
   
 }
 
+/* Filtros */
+
+.Filter {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1em;
+  margin-left: 5.5em;
+  
+}
+
+.Filter-button {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: solid 1px var(--azul);
+  color: var(--azul);
+  border-radius: 2em;
+  /* border: none; */
+  background-color: var(--bg-primary);
+  margin-inline: .5em;
+    font-size: small;
+
+}
+
+.Filter-button:hover {
+ /* color: var(--azul); */
+ background-color: #0000fd2d;
+   /* border: solid 1px var(--azul); */
+/* border: none; */
+
+}
+
+.Filter-button.active {
+  /* color: var(--azul); */
+    /* border: solid 1px var(--azul); */
+/* border: none; */
+ background-color: #0000fd2d;
+
+}
 /* Galería principal */
 .Gallery {
   display: flex;
@@ -15,8 +54,12 @@
   align-items: center;
   padding: 0em 3em 3em 3em;
   gap: 2rem;
-  margin-top: 4em;
+  margin-top: 2em;
 
+}
+/* No mostrar los chips*/
+.Project-tags{
+  display: none;
 }
 
 /* Proyecto individual */
@@ -94,6 +137,6 @@
   grid-auto-flow: row;
   gap: 2rem;
   padding: 0rem 6rem 6rem 6rem;
-  margin-top: 4em;
+  margin-top: 1.5em;
   }
 }
