@@ -11,10 +11,12 @@
 
 .Filter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: start;
   align-items: center;
-  margin-top: 1em;
-  margin-left: 5.5em;
+  margin-top: 1.5em;
+  margin-left: 3em;
+  gap: .5em;
   
 }
 
@@ -26,8 +28,7 @@
   border-radius: 2em;
   /* border: none; */
   background-color: var(--bg-primary);
-  margin-inline: .5em;
-    font-size: small;
+  font-size: x-small;
 
 }
 
@@ -44,17 +45,19 @@
     /* border: solid 1px var(--azul); */
 /* border: none; */
  background-color: #0000fd2d;
-
 }
+
+
 /* Galería principal */
 .Gallery {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 0em 3em 3em 3em;
   gap: 2rem;
-  margin-top: 2em;
+  margin-top: 1em;
 
 }
 /* No mostrar los chips*/
@@ -123,8 +126,19 @@
   grid-auto-flow: row;
   gap: 2rem;
   padding: 0rem 5rem 5rem 5rem;
-  margin-top: 4em;
+  margin-top: 2em;
+  align-items: start;
 }
+
+.Filter {
+  margin-left: 5em;
+  margin-top: 2em;
+}
+
+.Filter-button{
+  font-size: small;
+}
+
 }
 
 /* -------------- MQ para desktop ------------------ */
@@ -138,5 +152,14 @@
   gap: 2rem;
   padding: 0rem 6rem 6rem 6rem;
   margin-top: 1.5em;
+  align-items: start;
   }
+  
+.Filter {
+  margin-left: 5.5em;
+}
+
+.Filter-button {
+  font-size: small;
+}
 }
